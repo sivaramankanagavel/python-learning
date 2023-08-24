@@ -32,6 +32,9 @@ print(value_two * value_four)
 """Division"""
 print(value_two / value_four)
 
+"""Floor Division it gives the result in next nearest INT number"""
+print(value_two // value_three)
+
 """Modulus"""
 print(value_three % value_four)
 
@@ -59,3 +62,18 @@ print(min(value_nine, value_leven))
 print(math.ceil(value_nine))
 print(math.floor(value_nine))
 print(math.factorial(value_three))
+
+#--- logarithm, cosine value and e^n ---#
+"""Logarithm"""
+logarithm_value = input("Enter an number to find out the logarithm: ")
+base_value = input("Enter a base value: ")
+print(math.log(float(logarithm_value), float(base_value)))
+
+"""cosine"""
+value_cosine = math.radians(45)
+cosine_result = math.cos(value_cosine)
+print(cosine_result)
+
+"""e^n e=2.71828"""
+value_exp = math.exp(5.5)
+print(value_exp)
