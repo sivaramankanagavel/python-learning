@@ -24,7 +24,7 @@ print("replacing the existing word with new word, new word is second argument --
 
 # str.capitalize() method
 """
-here we converting the foirst letter of the given string into capital
+here we converting the first letter of the given string into capital
 """
 print(name1.capitalize())
 
@@ -155,4 +155,58 @@ separator = " "
 result = separator.join(lines)
 print(result)
 
-# -------------------- #
+# ---------Python Strings----------- #
+
+"""Python Strings"""
+value_one = "Hello World!"
+value_two = "sivaraman"
+value_three = "bye siva"
+value_five = " Hello Sivaraman ! "
+value_six = "Hello, world !"
+
+"""Looping through a string"""
+for x in value_one:
+      print(x)
+
+"""Checking the passing value in the main string"""
+value_four = "v"
+print(value_four in value_two)
+
+if value_four in value_one:
+      print("The world is present")
+
+else:
+      print("Word is not present")
+
+print(value_four not in value_one)
+
+# -------- Slicing Strings ----------#
+
+print(value_two[2: 5])
+print(value_two[-5: -2])
+
+# ----- Modifying String ---#
+
+"""Convert into uppercase"""
+print(value_one.upper())
+
+"""convert to lowercase"""
+print(value_two.lower())
+
+"""convert first letter into capital"""
+print(value_two.capitalize())
+
+"""replace the existing letter with new letter"""
+print(value_three.replace("e", "a"))
+
+"""Remove the unwanted white space in starting and ending of the given string"""
+print(value_five.strip())
+
+"""separate the given string words based on the split value"""
+print(value_one.split(" "))
+print(value_six.strip().split(","))
+
+#--- escape character ---#
+print("hello \"vikings\"")
+
+
