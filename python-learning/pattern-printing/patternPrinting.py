@@ -44,3 +44,28 @@ for i in range(5):
     for k in range(1, 10 - (i + i)):
         print("*", end="")
     print()
+
+"""
+question 4:
+            *******
+             *****
+              ***
+               *
+              ***
+             *****
+            *******
+"""
+
+for i in range(1, 8):
+    if i <= 4:
+        for j in range(i):
+            print(" ", end=" ")
+        for k in range(1, 10 - (i + i)):
+            print("*", end=" ")
+        print()
+for l in range(1, 4):
+    for m in range(4 - l):
+        print(" ", end=" ")
+    for n in range(l * 2 + 1):
+        print("*", end=" ")
+    print()
