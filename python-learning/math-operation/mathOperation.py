@@ -1,8 +1,8 @@
 import math
 """
-Here we are doing some math operation like addition, subtraction, multiplication, division and so on.
+Here we are doing some mathModule operation like addition, subtraction, multiplication, division and so on.
 
-math module is used to fetch the defined function from this module to use explicitly and these function
+mathModule module is used to fetch the defined function from this module to use explicitly and these function
 are like a ceil, floor, factorial and gcd so on.
 """
 

@@ -1,0 +1,7 @@
+setup.py
+mathModule.egg-info/PKG-INFO
+mathModule.egg-info/SOURCES.txt
+mathModule.egg-info/dependency_links.txt
+mathModule.egg-info/top_level.txt
+python-learning/__init__.py
+python-learning/main.py
