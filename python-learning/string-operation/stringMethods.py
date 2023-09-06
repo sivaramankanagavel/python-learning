@@ -94,10 +94,10 @@ here we passing the object as the parameter to the method and it will automatica
 name value from the given object. 
 """
 data = {
-      "name": "Sivaraman",
-      "profession": "React Developer",
-      "company_name": "NTT Data",
-      "work_location": "Bangalore"
+    "name": "Sivaraman",
+    "profession": "React Developer",
+    "company_name": "NTT Data",
+    "work_location": "Bangalore"
 }
 text_four = "Hi myself {name} and my profession is {profession}, I am working in {company_name} at {work_location}"
 print(text_four.format_map(data))
@@ -120,31 +120,31 @@ print(text_six.isalnum())
 print(text_seven.isalnum())
 print(text_eight.isalnum())
 
-#-------------------------#
+# -------------------------#
 
 # str.join() method
 """
 you have to join the set of string values into single piece of word
 """
 
-#example-1
+# example-1
 words = ["Hello", "world", "how", "are", "you?"]
 separator = " "
 print(separator.join(words))
 
-#example-2
+# example-2
 words = ["hello", "world", "how", "are", "you"]
 empty_separator = ""
 print(empty_separator.join(words))
 
-#example-3
+# example-3
 text = "Python is awesome!"
 separator = "-"
 
 result = separator.join(text)
 print(result)
 
-#example-4
+# example-4
 multi_line_text = """This is a multi-line
 string in Python.
 We can join these lines."""
@@ -166,17 +166,17 @@ value_six = "Hello, world !"
 
 """Looping through a string"""
 for x in value_one:
-      print(x)
+    print(x)
 
 """Checking the passing value in the main string"""
 value_four = "v"
 print(value_four in value_two)
 
 if value_four in value_one:
-      print("The world is present")
+    print("The world is present")
 
 else:
-      print("Word is not present")
+    print("Word is not present")
 
 print(value_four not in value_one)
 
@@ -206,7 +206,5 @@ print(value_five.strip())
 print(value_one.split(" "))
 print(value_six.strip().split(","))
 
-#--- escape character ---#
+# --- escape character ---#
 print("hello \"vikings\"")
-
-

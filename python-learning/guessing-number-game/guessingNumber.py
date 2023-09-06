@@ -4,7 +4,7 @@ We are going to create the guessing number game using random package
 
 import random
 
-random_number =  random.randint(1, 10)
+random_number = random.randint(1, 10)
 
 input_from_user = int(input("Enter The guessing number between 1 to 10: "))
 

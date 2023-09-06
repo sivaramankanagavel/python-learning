@@ -14,8 +14,8 @@ message(mes="Hello World !")  # mes ---> as passing arguments
 # creating the sum of the passing number:
 def sum_of_num(num):
     addition_result = 0
-    for i in range(0, num + 1):
-        addition_result += i
+    for ITERATOR_VALUE in range(0, num + 1):
+        addition_result += ITERATOR_VALUE
     return addition_result
 
 
@@ -41,8 +41,8 @@ create function like n no of input without defining the parameters in the functi
 def num_of_multiplication(*nums):  # *args
     total_result = 0
 
-    for i in nums:
-        total_result += i
+    for Iterator_value in nums:
+        total_result += Iterator_value
     return total_result
 
 
@@ -71,9 +71,9 @@ print_address(door_no="238 e/1", street_name="north thittankulam", dist="tuticor
 datas = ["Siva", "Jothi", "venki", "prasanth", "Gokul"]
 
 
-def checking_reference(listData):
-    for i in range(0, len(listData)):
-        listData[i] = listData[i].title()
+def checking_reference(list_data):
+    for Iterator_value in range(0, len(list_data)):
+        list_data[Iterator_value] = list_data[Iterator_value].title()
 
 
 # without affecting original data due to separate variable created.

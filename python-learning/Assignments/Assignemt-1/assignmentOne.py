@@ -28,19 +28,19 @@ while stop_loop_value == 1:
 print("The user added these todo: " + str(todo_list))
 
 # --- question - 3: find out the highest neighbor value ---#
-question_three = [3, 7, 9, 11, 15] # [3, 5, 9, 8, 4, 2]
+question_three = [3, 7, 9, 11, 15]# [3, 5, 9, 8, 4, 2]
 highest_number_one = 0
 
-if len(question_three) %2 == 0:
+if len(question_three) % 2 == 0:
     for num in question_three:
-        if highest_number_one < num :
+        if highest_number_one < num:
             highest_number_one = num
         else:
             continue
 
 else:
     for index, num in enumerate(question_three):
-        if index != len(question_three) -1:
+        if index != len(question_three) - 1:
             if highest_number_one < num:
                 highest_number_one = num
             else:
@@ -55,7 +55,7 @@ new_negative_array = []
 test_array = [5, 7, 9, -5, -12, -2, 6, 12]
 
 for num in test_array:
-    if num > 0 :
+    if num > 0:
         new_positive_array.append(num)
     else:
         new_negative_array.append(num)
