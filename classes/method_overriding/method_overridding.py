@@ -57,3 +57,7 @@ class Teacher(Student, Staff):
         print("Last child")
         print(Student.print_user_details(self))
         print(Staff.print_user_details(self))
+        return self
+
+    def greet(self):
+        print("Hello Teacher class")

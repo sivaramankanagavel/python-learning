@@ -14,3 +14,6 @@ teacher_one = Teacher("Jothiram", "Petro chemical")
 print(user_one.print_user_details())
 print(student_one.print_user_details())
 print(teacher_one.print_user_details())
+
+# method chaining:
+print(teacher_one.print_user_details().greet())
