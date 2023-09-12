@@ -26,15 +26,15 @@ class Items:
     # class level variable:
     instance_created = []
 
-    def __init__(self, name: str, price: float, quantity: float):
+    def __init__(self, name: str, price: float, quantity=0.0):
         # assert validation:
         assert price >= 0, f"the Price {price} value is not greater than or equal to zero"
-        assert quantity >= 0, f"the Quantity {quantity} value is not greater than or equal to zero"
+        # assert quantity >= 0, f"the Quantity {quantity} value is not greater than or equal to zero"
 
         # Instance variable assignment:
         self.__name = name
-        self.price = price
-        self.quantity = quantity
+        self.__price = price
+        self.__quantity = quantity
 
         # appending the list of instance created object into the class level variable:
         Items.instance_created.append(self)
@@ -63,11 +63,28 @@ class Items:
 
     @property
     def name(self):
-        return self.name
+        return self.__name  # Getter
 
     @name.setter
     def name(self, value):
-        self.__name = value
+        self.__name = value  # Setter
+
+    @property
+    def price(self):
+        return self.__price
+
+    """Instead of using the setter method use the separate method to change the private attributes"""
+
+    def increment_price(self, value):
+        self.__price += value  # Encapsulation : Is the user not directly modify the data from outside the class.
+
+    # Abstraction :  Is hiding the crucial data of accessing outside of the class and visibility from the user.
+    def __quantity_value(self, value):
+        self.__quantity += value
+
+    def increase_the_quantity(self, value):
+        self.__quantity_value(value)
+        return self.__quantity
 
     def __repr__(self):
-        return f"Items('{self.name}', {self.price}, {self.quantity})"
+        return f"Items('{self.name}', {self.price}, {self.__quantity})"
