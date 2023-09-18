@@ -10,5 +10,5 @@ list_dict_values = [{"name": "siva", "age": 27}, {"name": "venki", "age": 25},
 
 list_tuple_values.sort(key=lambda item: item[1])
 print(list_tuple_values)
-list_dict_values.sort(key=lambda item: item["name"])
+list_dict_values.sort(key=lambda item: item["name"], reverse=True)
 print(list_dict_values)
