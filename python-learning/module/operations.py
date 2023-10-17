@@ -1,4 +1,5 @@
-import mathModule.find_square_generator as find_square_generator
+from mathModule.math_operations import find_square_generator
+from mathModule.math_operations import find_recursion
 
 square_value = find_square_generator(10)
 for i in square_value:
