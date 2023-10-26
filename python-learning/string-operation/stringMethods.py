@@ -208,3 +208,35 @@ print(value_six.strip().split(","))
 
 # --- escape character ---#
 print("hello \"vikings\"")
+
+# split, join
+str_one = "How are you doing"
+str_two = "How,are,you,doing"
+
+result_one = str_one.split(" ")
+result_two = str_two.split(",")
+print(result_one)
+print(result_two)
+
+print("".join(result_one))
+print(" ".join(result_one))
+print(",".join(result_two))
+print("-".join(result_two))
+
+# % here the percentage is act like an placeholder and it act like an curly braces.
+string_variable = "Siva"
+number_variable = 3
+float_variable = 3.141265
+pi_value = 3.141265
+
+my_string = "the variable name is %s" % string_variable
+my_number = "the variable name is %d" % number_variable
+my_float = "the float value is %f" % float_variable
+my_float_two = "the float value is %.2f" % float_variable
+my_f_string = f"Hello PI value {pi_value:.2f} and {number_variable}"
+
+print(my_string)
+print(my_number)
+print(my_float)
+print(my_float_two)
+print(my_f_string)
