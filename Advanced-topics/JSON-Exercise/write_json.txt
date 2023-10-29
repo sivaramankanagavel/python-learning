@@ -1,0 +1,27 @@
+{
+    "name": "Sivaraman",
+    "age": 27,
+    "favorite_places": [
+        "Bhopal",
+        "Maharashtra",
+        "Bangalore"
+    ],
+    "friends": [
+        {
+            "name": "Jothiram",
+            "age": 27
+        },
+        {
+            "name": "Vinoth kannan",
+            "age": 27
+        },
+        {
+            "name": "Blesson",
+            "age": 27
+        }
+    ],
+    "mobile_number": [
+        "7598216496",
+        "8903621198"
+    ]
+}
