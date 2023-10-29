@@ -1,4 +1,5 @@
 import logging
+from custom_logger import custom_streamhandler_logger
 """
 Logging was used to print some messages, sent email or HTTP request to the specified address using 
 this logging Module.
@@ -37,3 +38,7 @@ log.warning("This is warning message")
 log.error("This is error message")
 
 
+try:
+    a = 6 / 0
+except Exception as e:
+    custom_streamhandler_logger.stream_logger.error(f"Error is {e}", exc_info=True)

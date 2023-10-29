@@ -1,0 +1,9 @@
+2023-10-29 18:04:42,068 - custom_logger.custom_streamhandler_logger - ERROR - This is error message
+2023-10-29 18:04:42,096 - custom_logger.custom_streamhandler_logger - ERROR - Error is division by zero
+2023-10-29 18:05:05,196 - custom_logger.custom_streamhandler_logger - ERROR - This is error message
+2023-10-29 18:05:05,214 - custom_logger.custom_streamhandler_logger - ERROR - Error is division by zero
+Traceback (most recent call last):
+  File "C:\Users\sivar\PycharmProjects\pythonProject\pythonProject\Advanced-topics\Logger\loggingExercise.py", line 42, in <module>
+    a = 6 / 0
+        ~~^~~
+ZeroDivisionError: division by zero
